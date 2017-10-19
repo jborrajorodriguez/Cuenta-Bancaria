@@ -37,7 +37,14 @@ public class EjemploCuentaBancaria {
         double saldo=teclado.nextDouble();
         Conta libreta3=new Conta(nome,numero_de_cuenta,saldo);
         System.out.println(libreta3.toString());
-       
+        //libreta3.ingreso(3000);
+        //System.out.println(libreta3.toString());
+        System.out.println("total = "+libreta3.ingreso(3000));
+        libreta3.retirada(2222000);
+        System.out.println(libreta3.toString());
+        //System.out.println(libreta3.retirada(System.out.printn(""))+"Total = ";
+        libreta3.anularConta();
+        System.out.println(libreta3.toString());
      
     }
     
