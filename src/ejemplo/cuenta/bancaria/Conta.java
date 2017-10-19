@@ -39,5 +39,10 @@ public class Conta {
         saldo-=retirada;
         return saldo;
     }
-    
+    //Se procede al metodo toString que es como amosar.
+    @Override//se le dice al compilador:Ojo que estoy sobreescribiendo el metodo por lo tanto usa el mío.
+    public String toString(){
+        return ("Nome = "+nome+" \nNumero de Conta = "+numero_de_conta+" \nSaldo = "+saldo);
+        
+    }
 }
