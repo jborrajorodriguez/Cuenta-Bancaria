@@ -45,4 +45,10 @@ public class Conta {
         return ("Nome = "+nome+" \nNumero de Conta = "+numero_de_conta+" \nSaldo = "+saldo);
         
     }
+    //metodo de anular conta
+    public void anularConta(){
+        nome="null";
+        numero_de_conta="null";
+        saldo=0.0;
+    } 
 }
